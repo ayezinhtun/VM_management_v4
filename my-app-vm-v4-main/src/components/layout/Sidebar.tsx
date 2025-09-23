@@ -23,9 +23,20 @@ interface SidebarProps {
 
 const menuItems = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { id: 'clusters', label: 'Cluster Management', icon: Server },
-  { id: 'nodes', label: 'Node Management', icon: Server },
-  { id: 'vms', label: 'VM Management', icon: Server },
+  // { id: 'clusters', label: 'Cluster Management', icon: Server },
+  // { id: 'nodes', label: 'Node Management', icon: Server },
+  // { id: 'vms', label: 'VM Management', icon: Server },
+  { 
+    id: 'infrastructure', 
+    label: 'Infrastructure', 
+    icon: Server,
+    hasDropdown: true,
+    children: [
+      { id: 'clusters', label: 'Cluster Management', icon: Server },
+      { id: 'nodes', label: 'Node Management', icon: Server },
+      { id: 'vms', label: 'VM Management', icon: Server }
+    ]
+  },
   // { id: 'create-vm', label: 'Create VM', icon: Plus },
   { 
     id: 'customers', 

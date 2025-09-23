@@ -416,7 +416,7 @@ about the code for other developers who may be working on the project. */
           {/* Infrastructure Selection */}
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Infrastructure Selection</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
               <FormField label="Select Cluster" required error={errors.cluster_id}>
                 <select
                   value={selectedCluster}
@@ -434,7 +434,7 @@ about the code for other developers who may be working on the project. */
                 </select>
               </FormField>
 
-              <FormField label="Select Node" required error={errors.node_id}>
+              {/* <FormField label="Select Node" required error={errors.node_id}>
                 <select
                   value={selectedNode}
                   onChange={(e) => setSelectedNode(e.target.value)}
@@ -450,7 +450,7 @@ about the code for other developers who may be working on the project. */
                     </option>
                   ))}
                 </select>
-              </FormField>
+              </FormField> */}
 
               
 
@@ -605,7 +605,7 @@ about the code for other developers who may be working on the project. */
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Custom Fields</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <FormField label="Environment">
+              {/* <FormField label="Environment">
                 <select
                   value={formData.custom_fields.environment}
                   onChange={(e) => setFormData({ 
@@ -620,9 +620,9 @@ about the code for other developers who may be working on the project. */
                   <option value="development">Development</option>
                   <option value="testing">Testing</option>
                 </select>
-              </FormField>
+              </FormField> */}
 
-              <FormField label="Access Level">
+              {/* <FormField label="Access Level">
                 <select
                   value={formData.custom_fields.access_level}
                   onChange={(e) => setFormData({ 
@@ -636,7 +636,7 @@ about the code for other developers who may be working on the project. */
                   <option value="high">High</option>
                   <option value="critical">Critical</option>
                 </select>
-              </FormField>
+              </FormField> */}
 
               <FormField label="Backup Enabled">
                 <label className="flex items-center space-x-2">
